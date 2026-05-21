@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainRot Heist — SoftBrainrot для Steal a Brainrot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🧠</span>
+      <span class="logo-text">BrainRot<span>Heist</span></span>
+    </div>
+    <nav class="nav">
+      <a href="#gallery">Игра</a>
+      <a href="#features">Функции</a>
+      <a href="#cheat-work">Чит</a>
+      <a href="#how">Как работает</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button type="button" class="btn btn-download btn-header" id="downloadBtn">
+      <span class="btn-icon">⬇</span>
+      Скачать
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Steal a Brainrot · Roblox</div>
+          <h1 class="hero-title">
+            Кради <span class="gradient">брейнротов</span><br>
+            у других игроков
+          </h1>
+          <p class="hero-desc">
+            <strong>SoftBrainrot</strong> — чит для плейса <strong>Steal a Brainrot</strong>. Кради брейнротов, качай базу, доминируй на сервере.
+            Автоматически забирай редких брейнротов с баз соперников, фарми оффлайн и
+            доминируй на сервере без рутины.
+          </p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-primary btn-lg" id="downloadBtnHero">
+              <span class="btn-icon">⬇</span>
+              Скачать бесплатно
+            </button>
+            <span class="hero-meta">v2.4.1 · Windows · Без вирусов*</span>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">12K+</span>
+              <span class="stat-label">скачиваний</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">47</span>
+              <span class="stat-label">брейнротов в базе</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">~2с</span>
+              <span class="stat-label">на кражу</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <a href="https://www.roblox.com/games/109983668079237/Steal-a-Brainrot" target="_blank" rel="noopener noreferrer" class="hero-game-card">
+            <img src="images/game-icon.png" alt="Steal a Brainrot — официальный плейс Roblox" class="hero-game-icon">
+            <span class="hero-game-label">Steal a Brainrot</span>
+          </a>
+          <img src="images/Odin_Din_Din_Dun.png" alt="Odin Din Din Dun" class="float-brainrot float-1">
+          <img src="images/Cappuccino_Assassino.png" alt="Cappuccino Assassino" class="float-brainrot float-2">
+          <img src="images/Trippi_Troppi.png" alt="Trippi Troppi" class="float-brainrot float-3">
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2 class="section-title">Steal a Brainrot — из игры</h2>
+      <p class="section-sub">Брейнроты с конвейера, базы игроков и редкие спавны — именно их крадёт чит</p>
+      <div class="gallery-featured">
+        <figure class="gallery-shot">
+          <img src="images/secret-spawn.png" alt="Сообщение о Secret спавне в игре">
+          <figcaption>Spawn Alert — чит ловит редкий Secret на сервере</figcaption>
+        </figure>
+        <figure class="gallery-shot">
+          <img src="images/sammyni-spyderini.png" alt="Sammyni Spyderini — брейнрот из игры">
+          <figcaption>Эксклюзивные брейнроты — высший приоритет кражи</figcaption>
+        </figure>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item rarity-common" data-brainrot="noobini">
+          <img src="images/Noobini_Pizzanini.png" alt="Noobini Pizzanini">
+          <span>Noobini Pizzanini</span>
+          <em>Common</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-rare" data-brainrot="trippi">
+          <img src="images/Trippi_Troppi.png" alt="Trippi Troppi">
+          <span>Trippi Troppi</span>
+          <em>Rare</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-rare" data-brainrot="gangster">
+          <img src="images/Gangster_Footera.png" alt="Gangster Footera">
+          <span>Gangster Footera</span>
+          <em>Rare</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-epic" data-brainrot="cappuccino">
+          <img src="images/Cappuccino_Assassino.png" alt="Cappuccino Assassino">
+          <span>Cappuccino Assassino</span>
+          <em>Epic</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-epic" data-brainrot="brr">
+          <img src="images/Brr_Brr_Patapim.png" alt="Brr Brr Patapim">
+          <span>Brr Brr Patapim</span>
+          <em>Epic</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-god" data-brainrot="odin">
+          <img src="images/Odin_Din_Din_Dun.png" alt="Odin Din Din Dun">
+          <span>Odin Din Din Dun</span>
+          <em>Brainrot God</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-secret" data-brainrot="vacca">
+          <img src="images/La_Vacca_Saturno_Saturnita.png" alt="La Vacca Saturno Saturnita">
+          <span>La Vacca Saturno</span>
+          <em>Secret</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-secret" data-brainrot="tralaleritos">
+          <img src="images/Los_Tralaleritos.png" alt="Los Tralaleritos">
+          <span>Los Tralaleritos</span>
+          <em>Secret</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-secret" data-brainrot="tung">
+          <img src="images/Tung_Tung_Tung_Sahur.png" alt="Tung Tung Tung Sahur">
+          <span>Tung Tung Tung Sahur</span>
+          <em>Secret</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-og" data-brainrot="skibidi">
+          <img src="images/Skibidi_Toilet.png" alt="Skibidi Toilet">
+          <span>Skibidi Toilet</span>
+          <em>OG</em>
+          <small class="gallery-income"></small>
+        </div>
+        <div class="gallery-item rarity-og" data-brainrot="strawberry">
+          <img src="images/Strawberry_Elephant.png" alt="Strawberry Elephant">
+          <span>Strawberry Elephant</span>
+          <em>OG</em>
+          <small class="gallery-income"></small>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <h2 class="section-title">Функционал</h2>
+      <p class="section-sub">Всё, что нужно, чтобы быстро прокачаться на плейсе</p>
+      <div class="cards">
+        <article class="card card-img">
+          <img src="images/Odin_Din_Din_Dun.png" alt="" class="card-thumb">
+          <h3>Auto Steal Brainrot</h3>
+          <p>Сканирует базы игроков рядом и крадёт по доходу $/сек: OG → Secret → Brainrot God → остальные.</p>
+        </article>
+        <article class="card card-img">
+          <img src="images/Skibidi_Toilet.png" alt="" class="card-thumb">
+          <h3>ESP & Radar</h3>
+          <p>Подсвечивает игроков с редкими брейнротами, показывает дистанцию и статус базы (открыта / под защитой).</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Speed & Fly</h3>
+          <p>Ускорение перед кражей и полёт над картой — добирайся до цели быстрее конкурентов.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🛡</div>
+          <h3>Anti-Kick Shield</h3>
+          <p>Обход типичных античит-проверок плейса. Стабильная работа на большинстве серверов.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">💰</div>
+          <h3>Auto Farm Offline</h3>
+          <p>Копит пассивный доход с твоих брейнротов, пока ты в AFK. Настраиваемый интервал сбора.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📋</div>
+          <h3>Target List</h3>
+          <p>Добавляй ники в список целей — чит будет следить за их базой и красть, когда защита спадёт.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔔</div>
+          <h3>Spawn Alert</h3>
+          <p>Уведомление, когда на сервере появляется редкий спавн или игрок выставил ценного брейнрота.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎛</div>
+          <h3>GUI Menu</h3>
+          <p>Удобное меню в игре: вкл/выкл модулей, слайдеры скорости, хоткеи под твой стиль.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="cheat-work" class="section cheat-work">
+      <h2 class="section-title">Как чит работает в игре</h2>
+      <p class="section-sub">Схема кражи: от скана базы соперника до появления брейнрота у тебя</p>
+
+      <div class="cheat-flow">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div class="flow-img-wrap">
+            <img src="images/Gangster_Footera.png" alt="Скан базы">
+            <span class="flow-tag scan">SCAN</span>
+          </div>
+          <h3>Скан базы</h3>
+          <p>Чит находит игрока с редким брейнротом на площадке и ждёт, пока щит защиты спадёт.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <div class="flow-img-wrap">
+            <img src="images/Cappuccino_Assassino.png" alt="ESP подсветка">
+            <span class="flow-tag esp">ESP</span>
+          </div>
+          <h3>ESP + Speed</h3>
+          <p>Подсветка цели сквозь стены, ускорение и полёт — ты добираешься до базы первым.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div class="flow-img-wrap">
+            <img src="images/La_Vacca_Saturno_Saturnita.png" alt="Кража брейнрота">
+            <span class="flow-tag steal">STEAL</span>
+          </div>
+          <h3>Auto Steal</h3>
+          <p>Автоматически забирает брейнрота с чужой базы — как в оригинальной механике игры, но без кликов.</p>
+        </div>
+        <div class="flow-arrow" aria-hidden="true">→</div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <div class="flow-img-wrap">
+            <img src="images/Tung_Tung_Tung_Sahur.png" alt="На твоей базе">
+            <span class="flow-tag done">DONE</span>
+          </div>
+          <h3>На твоей базе</h3>
+          <p>Брейнрот появляется у тебя — начинает фармить деньги. Auto Farm собирает оффлайн-доход.</p>
+        </div>
+      </div>
+
+      <div class="cheat-compare">
+        <div class="compare-panel compare-enemy">
+          <h4>База соперника</h4>
+          <div class="compare-slots">
+            <img src="images/Brr_Brr_Patapim.png" alt="">
+            <img src="images/Trippi_Troppi.png" alt="">
+            <div class="slot-stolen">
+              <img src="images/Odin_Din_Din_Dun.png" alt="Украден">
+              <span class="stolen-label">УКРАДЕНО</span>
+            </div>
+          </div>
+          <p class="compare-note">У соперника: Brr $100/сек · Trippi $15/сек · <strong>Odin $75K/сек</strong> ← крадём</p>
+        </div>
+        <div class="compare-mid">
+          <span class="steal-arrow">⚡ STEAL ⚡</span>
+        </div>
+        <div class="compare-panel compare-yours">
+          <h4>Твоя база</h4>
+          <div class="compare-slots">
+            <img src="images/Noobini_Pizzanini.png" alt="">
+            <img src="images/Odin_Din_Din_Dun.png" alt="" class="slot-new">
+            <img src="images/Cappuccino_Assassino.png" alt="">
+          </div>
+          <p class="compare-note">Итого на базе: <strong id="compareTotal">$75.076K/сек</strong> после кражи Odin</p>
+        </div>
+      </div>
+
+      <div class="cheat-screenshot">
+        <div class="screenshot-frame">
+          <img src="images/wiki-logo.png" alt="Steal a Brainrot" class="screenshot-bg">
+          <div class="cheat-overlay">
+            <div class="overlay-title">BrainRot Stealer — меню</div>
+            <ul class="overlay-modules">
+              <li class="on">✓ Auto Steal</li>
+              <li class="on">✓ ESP Players</li>
+              <li class="on">✓ Speed x3</li>
+              <li>○ Fly</li>
+              <li class="on">✓ Auto Farm</li>
+              <li class="on">✓ Spawn Alert</li>
+            </ul>
+            <div class="overlay-target">
+              Цель: <b>xXProBrainXx</b> — Odin · <b>$75K/сек</b>
+            </div>
+          </div>
+        </div>
+        <p class="screenshot-caption">Меню чита поверх игры — включаешь модули и смотришь лог краж в реальном времени</p>
+      </div>
+    </section>
+
+    <section id="how" class="section how">
+      <h2 class="section-title">Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Скачай и запусти</h3>
+          <p>Нажми «Скачать», открой файл и следуй инструкции в окне лаунчера.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Зайди на Steal a Brainrot</h3>
+          <p>Запусти Roblox, открой плейс Steal a Brainrot — инжект произойдёт автоматически.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Включи Auto Steal</h3>
+          <p>Открой меню (Insert), выбери модули и наблюдай, как брейнроты переезжают на твою базу.</p>
+        </div>
+      </div>
+      <div class="how-visual">
+        <img src="images/game-icon.png" alt="Запуск" class="how-step-img">
+        <span class="how-step-arrow">→</span>
+        <img src="images/secret-spawn.png" alt="В игре" class="how-step-img">
+        <span class="how-step-arrow">→</span>
+        <img src="images/Odin_Din_Din_Dun.png" alt="Результат" class="how-step-img how-step-result">
+      </div>
+      <figure class="promo-picture">
+        <img
+          src="images/promo-steal.png"
+          alt="Steal a Brainrot — кража брейнротов с базы соперника"
+          class="promo-picture-img"
+          width="1200"
+          height="675"
+          loading="lazy"
+        >
+        <figcaption class="promo-picture-caption">
+          Кради редких брейнротов, качай базу и доминируй на сервере
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="faq" class="section faq">
+      <h2 class="section-title">FAQ</h2>
+      <details class="faq-item">
+        <summary>Это бесплатно?</summary>
+        <p>Да, базовая версия бесплатна. Премиум-модули (Target List, Spawn Alert) — по ключу в меню.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Банят ли за чит?</summary>
+        <p>Риск есть на любом чите. Используй на альт-аккаунте. Anti-Kick снижает шанс кика, но не даёт 100% гарантии.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Как заменить файл для скачивания?</summary>
+        <p>Положи свой <code>.exe</code> в папку <code>downloads/</code> с именем <code>SoftBrainrot.exe</code> — кнопка скачает его автоматически.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <h2>Готов красть брейнротов?</h2>
+      <button type="button" class="btn btn-primary btn-lg" id="downloadBtnCta">
+        <span class="btn-icon">⬇</span>
+        Скачать SoftBrainrot
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Неофициальный фан-сайт · не связан с Roblox Corporation</p>
+    <p class="footer-small">* Проверяй файлы антивирусом. Скачиваешь на свой страх и риск.</p>
+  </footer>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+
+  <script src="brainrots-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
