@@ -1,5 +1,19 @@
-https://muslim-downloaded-board-percent.trycloudflare.com
+ПОСТОЯННЫЙ САЙТ — один шаг с твоей стороны
+==========================================
 
-Сайт онлайн, пока запущен start-hosting.bat (не закрывай окно).
+Дважды кликни:  СДЕЛАТЬ-ПОСТОЯННЫЙ-САЙТ.bat
 
-Скачать exe: https://muslim-downloaded-board-percent.trycloudflare.com/downloads/SoftBrainrot.exe
+1) Откроется браузер — войди в GitHub (бесплатно)
+2) Скрипт сам зальёт сайт и включит Pages
+3) Ссылка будет:
+
+   https://ТВОЙ_НИК.github.io/brainrot-heist-soft/
+
+Скачивание:
+   https://ТВОЙ_НИК.github.io/brainrot-heist-soft/downloads/SoftBrainrot.exe
+
+Работает всегда, ПК можно выключать.
+
+Альтернатива без GitHub:
+   https://app.netlify.com/drop  → перетащи websaite-deploy.zip
+   имя сайта: brainrot-heist-soft
