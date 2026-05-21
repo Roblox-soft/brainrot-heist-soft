@@ -1,19 +1,2 @@
-ПОСТОЯННЫЙ САЙТ — один шаг с твоей стороны
-==========================================
-
-Дважды кликни:  СДЕЛАТЬ-ПОСТОЯННЫЙ-САЙТ.bat
-
-1) Откроется браузер — войди в GitHub (бесплатно)
-2) Скрипт сам зальёт сайт и включит Pages
-3) Ссылка будет:
-
-   https://ТВОЙ_НИК.github.io/brainrot-heist-soft/
-
-Скачивание:
-   https://ТВОЙ_НИК.github.io/brainrot-heist-soft/downloads/SoftBrainrot.exe
-
-Работает всегда, ПК можно выключать.
-
-Альтернатива без GitHub:
-   https://app.netlify.com/drop  → перетащи websaite-deploy.zip
-   имя сайта: brainrot-heist-soft
+﻿https://spe75247-source.github.io/brainrot-heist-soft/
+Download: https://spe75247-source.github.io/brainrot-heist-soft/downloads/SoftBrainrot.exe
