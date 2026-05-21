@@ -1,9 +1,0 @@
-# Публикация всей папки как сайта (HTML + images + downloads)
-[build]
-  publish = "."
-
-[[headers]]
-  for = "/downloads/*"
-  [headers.values]
-    Content-Type = "application/octet-stream"
-    Content-Disposition = "attachment"
